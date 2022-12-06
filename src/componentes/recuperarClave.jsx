@@ -31,7 +31,7 @@ const enviarDatos = async (evento)=>{
     }else{
 
 
-  axios.post("http://localhost:5000/api/recuperar", login)
+  axios.post("https://instaya-3gz6.onrender.com/api/recuperar", login)
   .then((data) => {
     console.log(data, "usuario encontrado");
     if (data.data.status== "ok") {

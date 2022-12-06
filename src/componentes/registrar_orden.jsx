@@ -59,7 +59,7 @@ const RegistrarOrden = () => {
 
     } else {
 
-      axios.post("http://localhost:5000/api/registrarorden", orden)
+      axios.post("https://instaya-3gz6.onrender.com/api/registrarorden", orden)
         .then((response) => {
           setOrdenes(response.data);
           alert('Registrado Exitosamente');

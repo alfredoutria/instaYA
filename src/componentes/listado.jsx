@@ -19,7 +19,7 @@ const Listado = () =>{
     async function obtenerLista() {
       
       try {
-        const response = await axios.get(`http://localhost:5000/api/lista/${usuario}`);
+        const response = await axios.get(`https://instaya-3gz6.onrender.com/api/lista/${usuario}`);
         setLista(response.data);
        
        

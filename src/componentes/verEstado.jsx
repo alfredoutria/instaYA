@@ -30,7 +30,7 @@ const Estado = () =>{
 		function () {
 			async function obtenerdatosId() {
 				try {
-					const response = await axios.get(`http://localhost:5000/api/obtenerdatos/${id}`);
+					const response = await axios.get(`https://instaya-3gz6.onrender.com/api/obtenerdatos/${id}`);
 					setDatos(response.data);
           console.log("DATOS ACT:" + response.data.estado);
 				} catch (error) {

@@ -21,7 +21,7 @@ const enviarDatos = async (evento)=>{
   evento.preventDefault();
 
     
-  axios.post("http://localhost:5000/api/registrarusuario", usuario)
+  axios.post("https://instaya-3gz6.onrender.com/api/registrarusuario", usuario)
   .then((response) => {
     setUsuario(response.data);
     alert('Registrado Exitosamente');

@@ -29,7 +29,7 @@ const enviarDatos = async (evento)=>{
 
  }else{
 
-  axios.post("http://localhost:5000/api/login", login)
+  axios.post("https://instaya-3gz6.onrender.com/api/login", login)
   .then((data) => {
     if (data.data.status== "ok") {
       window.localStorage.setItem("token", data.data);
