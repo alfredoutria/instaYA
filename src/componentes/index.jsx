@@ -29,7 +29,7 @@ const enviarDatos = async (evento)=>{
 
  }else{
 
-  axios.post("https://web-instaya.netlify.app/api/login", login)
+  axios.post("http://localhost:5000/api/login", login)
   .then((data) => {
     if (data.data.status== "ok") {
       window.localStorage.setItem("token", data.data);
