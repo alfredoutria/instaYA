@@ -73,7 +73,7 @@ const enviarDatos = async (evento)=>{
 </header>
       <div className='contenido'>
         <form className="row g-3" onSubmit={enviarDatos} >
-         <label className="label_titulo">Iniciar Sesión</label>
+         <label className="label_titulo">Sesión</label>
          <div className="mensaje" style={mensaje} >Debe llenar todos los campos</div>
          <div className="mensaje" style={mensajeE} >Datos incorrectos</div>
        <div className="form-group">
