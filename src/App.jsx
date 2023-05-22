@@ -10,6 +10,7 @@ import Cancelar from './componentes/cancelar';
 import Estado from './componentes/verEstado';
 import RecuperarClave from './componentes/recuperarClave';
 import CambiarClave from './componentes/cambiarClave';
+import CreateVehiculo from './componentes/CreateVehiculo';
 
 
 const App = () =>{
@@ -29,6 +30,7 @@ const App = () =>{
             <Route exact path='/nosotros' element={<Nosotros/>}/>
             <Route exact path='/recuperar' element={<RecuperarClave/>}/>
             <Route exact path='/cambiar/:id/:usuario' element={<CambiarClave/>}/>
+            <Route exact path='/compa' element={<CreateVehiculo/>}/>
         </Routes>
      </BrowserRouter>
      </div>
